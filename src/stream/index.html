@@ -13,12 +13,9 @@
     //
     const fileItem = document.querySelector("#fileItem");
     fileItem.onchange = function () {
-      console.log(this.files[0]);
-      const data = new FormData();
-      data.append("file", this.files[0]);
       fetch("/upload", {
         method: "POST",
-        body: data,
+        body: this.files[0],
       });
     };
   </script>
