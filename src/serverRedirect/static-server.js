@@ -12,8 +12,8 @@ const app = http.createServer((req, res) => {
     });
     req.on("end", () => {
       parseFile(data, separator);
+      res.end("upload");
     });
-    res.end("upload");
     return;
   }
 
