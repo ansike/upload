@@ -31,7 +31,7 @@ node src/serverRedirect/static-server.js
 
 点击上传文件，上传之后可以在upload目录看到对应文件
 
-### node构造 formdata 发送请求
+### node 构造 formdata 发送请求
 
 ```shell
 # 先启动
